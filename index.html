@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Milk Calculator</h1>
+        </div>
+        <br>
+
+        <div class="content">
+            <label>Select : </label>
+            <input type="radio" name="type" Value="CLR" id="CLR" class="radio"/>
+            <label for="CLR">CLR</label>
+            <input type="radio" name="type" Value="SNF" id="SNF" class="radio"/>
+            <label for="SNF">SNF</label> 
+            <input type="number" id="ans" min="0" class="ctnt_box" placeholder="Enter value" required/>
+        </div>
+
+        
+        <div class="content">
+            <label>Enter the Fat :</label>
+            <input type="number" id="fat" min="0" class="ctnt_box" required/>
+        </div>
+
+        
+        <div class="content">
+            <label>Enter Rate :</label>
+            <input type="number" id="rate" min="0" class="ctnt_box" required/>
+        </div>
+
+        
+        <div class="content">
+            <label>Enter Amount of Milk :</label>
+            <input type="number" id="milk" min="0" class="ctnt_box" required/>
+        </div>
+    
+        
+        <div class="content">
+            <label>SNF Method :</label>
+            <select id="method" class="ctnt_box">
+                <option value="60/40">60/40</option>
+                <option value="52/48">52/48</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button onclick="calc(); show_hide();">Calculate</button>
+            <button onclick="refresh()">Refresh</button>
+        </div>
+
+        <br>
+
+        <div class="result" style="display: none;">
+            SNF Value : <h2 id="snf"></h2>
+            <br>
+            SNF per Kg : <h2 id="snf/kg"></h2>
+            <br>
+            SNF per Kg Rate : <h2 id="snf/kg_rate"></h2>
+            <br>
+            Value of Powder : <h2 id="pow_val"></h2>
+            <br>
+            Fat per Kg : : <h2 id="fat/kg"></h2>
+            <br>
+            Fat per Kg Rate : <h2 id="fat/kg_rate"></h2>
+            <br>
+            Value of Fat : <h2 id="fat_value"></h2>
+            <br>
+            Total Value : <h2 id="ttl_value"></h2>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
