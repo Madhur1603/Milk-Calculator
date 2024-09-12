@@ -10,7 +10,7 @@ function refresh() {
     const resultSection = document.querySelector('.result');
     resultSection.style.display = 'none';
 }
-
+// again
 function moveCursor(event, nextElementId) {
     if (event.key === "Enter") {
         event.preventDefault();
