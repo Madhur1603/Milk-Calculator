@@ -6,10 +6,20 @@ function refresh() {
     });
 
     // Get the result section and hide it
+    document.getElementById('method').value = '60/40';
     const resultSection = document.querySelector('.result');
     resultSection.style.display = 'none';
 }
 
+function moveCursor(event, nextElementId) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        const nextElement = document.getElementById(nextElementId);
+        if (nextElement) {
+            nextElement.focus();
+        }
+    }
+}
 
 
 function calc(){
