@@ -10,7 +10,7 @@ function refresh() {
     const resultSection = document.querySelector('.result');
     resultSection.style.display = 'none';
 }
-// again
+
 function moveCursor(event, nextElementId) {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -72,7 +72,7 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = Math.floor(powder_value) + Math.floor(fat_value);
+            let ttl = powder_value + fat_value;
             document.getElementById('ttl_value').innerHTML = ttl;
         }
         else if(method === '52/48'){
@@ -101,7 +101,7 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = Math.floor(powder_value) + Math.floor(fat_value);
+            let ttl = powder_value + fat_value;
             document.getElementById('ttl_value').innerHTML = ttl;
         }
     }
@@ -135,7 +135,7 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = Math.floor(powder_value) + Math.floor(fat_value);
+            let ttl = powder_value + fat_value;
             document.getElementById('ttl_value').innerHTML = ttl;
         }
         else if(method === '52/48'){
@@ -164,10 +164,8 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = Math.floor(powder_value) + Math.floor(fat_value);
+            let ttl = powder_value + fat_value;
             document.getElementById('ttl_value').innerHTML = ttl;
         }
-    }
-    
-    
+    }   
 }
