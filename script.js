@@ -72,7 +72,7 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = powder_value + fat_value;
+            let ttl = (powder_value + fat_value).toFixed(2);
             document.getElementById('ttl_value').innerHTML = ttl;
         }
         else if(method === '52/48'){
@@ -101,20 +101,15 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = powder_value + fat_value;
+            let ttl = (powder_value + fat_value).toFixed(2);
             document.getElementById('ttl_value').innerHTML = ttl;
         }
     }
 
 
-
-
     function milkcal_SNF(){
         if(method === '60/40' ){
 
-            // let clr = ans;
-            // let fat = fat2*2/10;
-            // let snf1 = clr/4+0.14+fat;
             let snf = ans.toFixed(2);
             document.getElementById('snf').innerHTML = snf;
     
@@ -135,14 +130,11 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = powder_value + fat_value;
+            let ttl = (powder_value + fat_value).toFixed(2);
             document.getElementById('ttl_value').innerHTML = ttl;
         }
         else if(method === '52/48'){
     
-            // let clr=ans;
-            // let fat = fat2*2/10;
-            // let snf1 = clr/4+0.14+fat;
             let snf = ans.toFixed(2);
             document.getElementById('snf').innerHTML = snf;
     
@@ -164,7 +156,7 @@ function calc(){
             let fat_value = Math.floor(fat_kg*fat_kg_rate * 100) / 100;
             document.getElementById('fat_value').innerHTML = fat_value;
     
-            let ttl = powder_value + fat_value;
+            let ttl = (powder_value + fat_value).toFixed(2);
             document.getElementById('ttl_value').innerHTML = ttl;
         }
     }   
